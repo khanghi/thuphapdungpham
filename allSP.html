@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất Cả Sản Phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--reset-->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.2/css/all.min.css">   <!--icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> <!--bootstrap.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container-fluit">
+        <header class="header">
+            <nav class="header__navbar header__navbar-top">
+             <div class="container">
+                 <div class="navbar-span">
+                     <span><i class="fa-solid fa-square-phone"></i> Hotline: 0384394598 (Mis Ly) <i class="fa-solid fa-square-phone"></i> Hotline: 0988690911 (Lac Mac) - TẠI CỬA HÀNG: 0987853816</span>
+                 </div>
+                 <ul class="header__navbar-list">
+                     <li class="header__navbar-item separate">
+                         <a href="">Điều khoản chính sách</a>
+                     </li>
+                     <li class="header__navbar-item separate">
+                         <button class="btn js-login"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</button>
+                     </li>
+                     <li class="header__navbar-item">
+                         <button class="btn js-register"><i class="fa-solid fa-user-plus"></i> Đăng ký</button>
+                     </li>
+                 </ul>
+             </div>
+            </nav>
+            <nav class="header__navbar header__navbar-bottom">
+             <div class="container">
+                 <img src="./Images/logo.webp" alt="" class="logo">
+                 <div class="search_form">
+                     <form action="#" method="post">
+                         <select id="menu">
+                             <option>Tất cả</option>
+                             <option>Dụng cụ khác</option>
+                             <option>Tất cả sản phẩm - combo - giấy thư pháp</option>
+                             <option>Giấy viết thư pháp xuân Nhâm Dần 2022</option>
+                             <option>Bút lông bơm mực</option>
+                             <option>Đồ cổ trang, cổ phong</option>
+                             <option>Vở viết chữ tiểu khải, chép kinh</option>
+                             <option>Sản phẩm khuyến mại kèm đơn hàng</option>
+                             <option>Bút, sách, vở, dụng cụ viết chữ Hán</option>
+                             <option>Bút lông - mực các loại - nghiên</option>
+                             <option>Sách học chữ Hán Nôm</option>
+                             <option>Sách thư pháp Việt</option>
+                             <option>Sách thư pháp Hán</option>
+                             <option>Tranh nghệ thuật, tranh cổ, phong thủy</option>
+                             <option>Khay, bảng pha màu</option>
+                             <option>Vật dụng khắc triện, phôi triện</option>
+                             <option>Giấy chép bát nhã tâm kinh</option>
+                             <option>Bút lông thư pháp Việt</option>
+                             <option>Bút lông cỡ tiểu (cỡ chữ nhỏ)</option>
+                             <option>Bút máy hero hàng đặt</option>
+                             <option>Tất cả - trừ combo</option>
+                             <option>Bút máy hãng hero</option>
+                             <option>Giảm giá 25%</option>
+                             <option>Sản Phẩm Viết Nhiều Lần</option>
+                             <option>Cọ vẽ tranh</option>
+                             <option>Giảm giá 50%</option>
+                             <option>Giảm giá 30%</option>
+                             <option>Nhóm sản phẩm khuyễn mại 15%</option>
+                             <option>QUÀ TẶNG, THANH LÝ, GIẢM GIÁ</option>
+                             <option>Sách dạy vẽ tranh thủy mặc</option>
+                             <option>màu vẽ</option>
+                             <option>Tất cả Sản phẩm</option>
+                             <option>Giấy xuyến, giấy viết tác phẩm, giấy vẽ</option>
+                             <option>Mành tre viết thư pháp</option>
+                             <option>Nẹp - Trục - Ống Sáo</option>
+                             <option>Giấy treo - Giấy trang trí</option>
+                             <option>Giấy xuyến chỉ</option>
+                             <option>Giấy tập viết thư pháp Việt, thư pháp Hán</option>
+                             <option>Giấy, biểu, liễn viết câu đối</option>
+                             <option>Biểu/ Liễn giấy xuyến chỉ</option>
+                             <option>Giấy Nhung, Giấy mỹ thuật in tranh</option>
+                             <option>Giấy ganh, Giấy mỹ thuật in tranh viết thư pháp</option>
+                             <option>Giấy ốp, giấy mỹ thuật in tranh</option>
+                             <option>Sách, giáo trình, thiếp bi thư pháp</option>
+                             <option>Mực Tàu, Mực thỏi, Mực nước, Mực màu, Mực Nho, Mực Mài</option>
+                         </select>
+                         <input type="text" placeholder="Hãy điền tên sản phẩm bạn muốn tìm kiếm ^^...">
+                         <span><a href="./allSP.html"><i class="fa-solid fa-magnifying-glass"></i></a></span>
+                     </form>
+                 </div>
+                 <div class="bag">
+                     <a href="#" class="bag_nut">
+                         <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng <span class="soluong">0</span>
+                     </a>
+                 </div>
+             </div>
+            </nav>
+         </header>
+    </div>
+    
+    <div class="container">
+        <!-- Breadcrumb -->
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./allSP.html">Tất cả sản phẩm</a></li>
+        </ul>
+        <!-- phần 1: Sidebar and navbar -->
+        <div class="flex">
+            <!-- Phần sidebar -->
+            <div class="sidebar">
+                <div class="megamenu-wrapper">
+                    <div class="megamenu-head text-center">
+                        <span><i class="fa fa-bars"></i> Danh mục sản phẩm</span>
+                    </div>
+                    <div  class="megamenu-body show-menu">
+                        <!-- phần chi tiết danh mục sản phẩm-->
+                        <ul class="no-bullets">
+                            <li class="raise-menu"> <a href="./allSP.html">Các loại Giấy - Biểu - Liễn </a>
+                                <ul class="no-bullets"> 
+                                    <li> <a href="./manhTre.html">Mành tre (3)</a> </li> 
+                                    <li> <a href="./chiTiet.html">Giấy ốp (7)</a> </li> 
+                                    <li> <a href="#">Giấy ganh (10)</a> </li> 
+                                    <li> <a href="#">Giấy Nhung (4)</a> </li> 
+                                    <li> <a href="#">Giấy treo, trang trí (3)</a> </li> 
+                                    <li> <a href="#">Biểu - Xuyến bo lụa (14)</a> </li> 
+                                    <li> <a href="#">Giấy xuyến, giấy vẽ (19)</a> </li> 
+                                    <li> <a href="#">Giấy viết câu đối (18)</a> </li> 
+                                    <li> <a href="#">Giấy tập viết (11)</a> </li> 
+                                    <li> <a href="#">Quạt giấy (16)</a> </li> 
+                                    <li> <a href="#">Giấy chép tâm kinh (6)</a> </li> 
+                                    <li> <a href="#">Nẹp - Trục - Ống Sáo (1)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Bộ văn phòng tứ bảo </a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Văn phòng tứ bảo (12)</a> </li> 
+                                    <li> <a href="#">Hàng đặt (6)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Bút lông - Nghiên Mực - Mực Tàu </a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Bút lông (83)</a> </li> 
+                                    <li> <a href="#">Bút tiểu (cỡ nhỏ) (33)</a> </li> 
+                                    <li> <a href="#">Bút lông thư pháp Việt (42)</a> </li> 
+                                    <li> <a href="#">Bút lông bơm mực (11)</a> </li> 
+                                    <li> <a href="#">Nghiên mực (14)</a> </li> 
+                                    <li> <a href="#">Các lại mực tàu (25)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Bút máy - Dụng cụ viết chữ Hán Nôm </a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Sách, bút, vở viết chữ Hán, Nôm (50)</a> </li> 
+                                    <li> <a href="#">Bút máy, bút gel, bút lông mềm (24)</a> </li> 
+                                    <li> <a href="#">Bút máy hãng hero (13)</a> </li> 
+                                    <li> <a href="#">Vở tiểu khải (chữ nhỏ) (15)</a> </li> 
+                                    <li> <a href="#">Bút máy cao cấp (hàng đặt) (11)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Tranh cổ - Đồ cổ trang </a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Tranh thủy mặc, tranh cổ (7)</a> </li> 
+                                    <li> <a href="#">Đồ cổ trang, cổ phong (8)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Mảnh cuộn bút - Thảm lót </a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Mành bảo quản bút (2)</a> </li> 
+                                    <li> <a href="#">Thảm lót (2)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Giá treo bút - Gác bút - Chặn giấy </a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Giá treo bút (6)</a> </li> 
+                                    <li> <a href="#">Gác bút (8)</a> </li> 
+                                    <li> <a href="#">Chặn giấy (7)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Giáo trình, thiếp, bi thư pháp </a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Sách thư pháp Hán (47)</a> </li> 
+                                    <li> <a href="#">Sách thư pháp Việt (1)</a> </li> 
+                                    <li> <a href="#">Sách Hán Nôm (8)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Dụng cụ khắc triện</a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Dụng cụ khắc triện, phôi triện (14)</a> </li> 
+                                    <li> <a href="#">Mực ấn triện (5)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Ống đựng bút - Chén rửa bút</a> 
+                                <ul class="no-bullets">
+                                    <li> <a href="#">Ống đựng bút (2)</a> </li> 
+                                    <li> <a href="#">Chén rửa bút (0)</a> </li> 
+                                </ul> 
+                            </li>            
+                            <li class="raise-menu"> <a href="./allSP.html">Sản phẩm thư họa</a> 
+                                <ul class="no-bullets"> 
+                                    <li> <a href="#">Màu vẽ (9)</a> </li> 
+                                    <li> <a href="#">Sách dạy vẽ (10)</a> </li> 
+                                    <li> <a href="#">Cọ vẽ (31)</a> </li> 
+                                </ul> 
+                            </li>                 
+                            <li class="raise-menu"> <a href="./allSP.html">Sản phẩm viết nhiều lần</a> </li>
+                            <li class="raise-menu"> <a href="./allSP.html">Dụng cụ khác</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Phần navbar -->
+            <div class="content_navbar">
+                <div class="content_nav">
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav myNav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cửa hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kho tài liệu free</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bài viết</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- CONTENT -->
+                <h3 class="tieuDe-danhMuc">TẤT CẢ SẢN PHẨM</h3>
+                <div class="danhmuc space-between">
+                    <div class="home-collection-item">
+                        <a href="./chiTiet.html">
+                            <div class="home-collection-img"><img src="./Images/sanpham1.webp" alt=""></div>
+                            <p class="tenSP">Giấy viết tác phẩm thư pháp ô tròn ngọai đương set 10 tờ</p>
+                            <p class="giaSP">120,000₫</p>
+                            <button class="home-collection-btn js-giayViet">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="./chiTiet.html">
+                            <div class="home-collection-img"><img src="./Images/sanpham2.webp" alt=""></div>
+                            <p class="tenSP">Giấy hoàng chỉ giấy vàng vẽ bùa phù chú</p>
+                            <p class="giaSP">50,000₫</p>
+                            <button class="home-collection-btn js-giayViet">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="./chiTiet.html">
+                            <div class="home-collection-img"><img src="./Images/sanpham4.webp" alt=""></div>
+                            <p class="tenSP">Giấy xuyến chỉ đỏ vân rồng phượng hình vuông (20 tờ)</p>
+                            <p class="giaSP">25,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham5.webp" alt=""></div>
+                            <p class="tenSP">Biểu Liễn Câu Đối Đỏ Giấy Xuyến Chỉ 23x160cm (1 cặp)</p>
+                            <p class="giaSP">150,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham6.webp" alt=""></div>
+                            <p class="tenSP">Cuộn Giấy Câu Đối Đỏ</p>
+                            <p class="giaSP">95,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham20.webp" alt=""></div>
+                            <p class="tenSP">Cuộn Giấy Xuyến Chỉ Ô tròn Long Phụng Màu Cổ</p>
+                            <p class="giaSP">280,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham21.webp" alt=""></div>
+                            <p class="tenSP">Giấy ốp, liễn giấy in tranh 27x79 cm (chưa gồm nẹp treo)</p>
+                            <p class="giaSP">4,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham22.jpg" alt=""></div>
+                            <p class="tenSP">Các Mẫu Giấy Đỏ Viết Câu đối Xuyến Chỉ Nhuộm Sáp Mẫu Mới ...</p>
+                            <p class="giaSP">80,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="./chiTietMuc.html">
+                            <div class="home-collection-img"><img src="./Images/sanpham18.webp" alt=""></div>
+                            <p class="tenSP">Mực túc mặc cao cấp Tuyên Hòa viết thư pháp 500g sắc đen ...</p>
+                            <p class="giaSP">230,000₫</p>
+                            <button class="home-collection-btn js-mucViet">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="./chiTietMuc.html">
+                            <div class="home-collection-img"><img src="./Images/sanpham3.webp" alt=""></div>
+                            <p class="tenSP">Biểu liễn thư pháp mini giấy xuyến 10x35cm</p>
+                            <p class="giaSP">40,000₫</p>
+                            <button class="home-collection-btn js-mucViet">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham9.webp" alt=""></div>
+                            <p class="tenSP">Bút Lông Xà Cừ Thuần Lang Hào</p>
+                            <p class="giaSP">70,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham10.webp" alt=""></div>
+                            <p class="tenSP">Vở Tập Viết Vạn Lần Thanh Hoa + Tặng 01 bút lông</p>
+                            <p class="giaSP">130,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham22.jpg" alt=""></div>
+                            <p class="tenSP">Các Mẫu Giấy Đỏ Viết Câu đối Xuyến Chỉ Nhuộm Sáp Mẫu Mới ...</p>
+                            <p class="giaSP">80,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham12.webp" alt=""></div>
+                            <p class="tenSP">Bộ dụng cụ cho người mới học thư pháp</p>
+                            <p class="giaSP">50,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham13.webp" alt=""></div>
+                            <p class="tenSP">[Thanh Lý] Tranh Phong Thủy Hổ</p>
+                            <p class="giaSP">250,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham14.webp" alt=""></div>
+                            <p class="tenSP">[Thanh Lý] Tranh Đại Bàng - Bằng Trình Vạn Lý</p>
+                            <p class="giaSP">150,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham15.webp" alt=""></div>
+                            <p class="tenSP">[Xả Kho Giảm 20%] Mành tre viết thư pháp 10x20 cm</p>
+                            <p class="giaSP">4,800₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham16.webp" alt=""></div>
+                            <p class="tenSP">[THANH LÝ] Bộ 06 cọ vẽ rẻ quạt Matisse Mã 2</p>
+                            <p class="giaSP">50,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham21.webp" alt=""></div>
+                            <p class="tenSP">Giấy ốp, liễn giấy in tranh 27x79 cm (chưa gồm nẹp treo)</p>
+                            <p class="giaSP">4,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="home-collection-item">
+                        <a href="#">
+                            <div class="home-collection-img"><img src="./Images/sanpham17.webp" alt=""></div>
+                            <p class="tenSP">Giấy chép bát nhã tâm kinh màu cổ combo 05 tờ</p>
+                            <p class="giaSP">170,000₫</p>
+                            <button class="home-collection-btn">
+                                <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                CHI TIẾT
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+     <!-- Footer -->
+    <div class="container-fluit">
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_adress">
+                    <div class="ft_adress-logo">
+                        <a href="./index.html"><img src="./Images/logo.webp" alt=""></a>
+                        <h4 class="logo-gioiThieu">VẬT DỤNG THƯ PHÁP VÀ VẬT PHẨM PHẬT GIÁO ƯU ĐÀM</h4>
+                    </div>
+                    <a href="./index.html" style="color: var(--org-color);">Xem thêm</a>
+                    <ul  class="no-bullets">
+                        <li class="ft_adress-item">Địa chỉ: <a href="#">Số 71, đường Linh Đường, Linh Đàm, Hoàng Liệt, Hoàng Mai, Hà Nội</a></li>
+                        <li class="ft_adress-item">Hotline: <a href="#">0384394598 (Mis Ly)</a></li>
+                        <li class="ft_adress-item">Hotline: <a href="#">0988690911 (Lac Mac) - TẠI CỬA HÀNG: 0987853816</a></li>
+                        <li class="ft_adress-item">Email: <a href="#">thuphapdungpham@gmail.com</a></li>
+                    </ul>
+                    <div class="ft_logo-kiemDuyet">
+                        <img src="./Images/footer_logo_1.png" alt="">
+                        <img src="./Images/footer_logo_2.webp" alt="">
+                    </div>
+                </div>
+                <div class="footer_nav">
+                    <h4>THÔNG TIN</h4>
+                    <ul  class="no-bullets">
+                        <li class="ft_nav-item"><a href="#">Giới thiệu</a></li>
+                        <li class="ft_nav-item"><a href="#">Liên hệ</a></li>
+                        <li class="ft_nav-item"><a href="#">Tuyển dụng</a></li>
+                        <li class="ft_nav-item"><a href="#">Chính sách bán hàng</a></li>
+                        <li class="ft_nav-item"><a href="#">Phương thức thanh toán</a></li>
+                        <li class="ft_nav-item"><a href="#">Chính sách đổi trả</a></li>
+                        <li class="ft_nav-item"><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer_fanpage">
+                    <h4>FANPAGE</h4>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthuphapdungpham%2F&tabs=timeline&width=280&height=125&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="125" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="map">
+                    <h4>BẢN ĐỒ</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.737979991181!2d105.83700771440628!3d20.963034995395866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad46869f255d%3A0x8a74a534a091c027!2zVGjGsCBQaMOhcCBE4bulbmcgUGjhuqlt!5e0!3m2!1svi!2s!4v1660789136739!5m2!1svi!2s" width="354" height="210" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style ="margin-bottom: 15px;">Copyrights © 2017 by Thư Pháp Dụng Phẩm.</p>
+                <p>Hộ Kinh Doanh Vật dụng Thư Pháp Và Vật Phẩm Phật Giáo Ưu Đàm</p>
+                <p>Số ĐKKD: 01M8019255 cấp lần đầu tiên vào ngày 06/11/2018. Nơi cấp: UBND quận Hoàng Mai, Hà Nội.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- back-to-top -->
+    <a href="#"><div class="back-to-top"><i class="fa fa-angle-up" aria-hidden ="true"></i></div></a>
+    <!-- fixed-social-network -->
+    <div id="mySidenav">
+        <a href="https://www.facebook.com/hy.van.777158/" class="fb-icon fixed-icon"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+        <a href="#" class="ins-icon fixed-icon"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        <a href="#" class="yt-icon fixed-icon"><i class="fa-brands fa-youtube"></i>Youtube</a>
+        <a href="#" class="tw-icon fixed-icon"><i class="fa-brands fa-twitter"></i>Twitter</a>
+    </div>
+    <!-- Modal/phần nổi -->
+    <div class="modal" id="form_login">
+        <!-- cửa sổ đăng nhập -->
+        <div class="header_form login">
+            <div class="close"><i class="fa-solid fa-xmark"></i></div>
+            <h1>Đăng nhập</h1>
+            <a href="#"><button class="motNua fb btn">Facebook</button></a>
+            <a href="#"><button class="motNua gg btn">Google</button></a>
+            <form action="#" method="post">
+                <input type="email" placeholder="Email" class="motDong" >
+                <input type="password" placeholder="Mật khẩu" class="motDong">
+            </form>
+            <button class="motDong btn">Đăng nhập</button>
+            <a href="#">Quên mật khẩu?</a>
+            <hr/>
+            <div class="header_form_footer">
+                <a href="https://www.thuphapdungpham.com/pages/huong-dan-mua-hang">Trợ giúp</a>
+            </div>
+        </div>
+        <!-- cửa sổ đắng ký -->
+        <div class="header_form register">
+            <div class="close"><i class="fa-solid fa-xmark"></i></div>
+            <h1>Tạo tài khoản</h1>
+            <a href="#"><button class="motNua fb btn">Facebook</button></a>
+            <a href="#"><button class="motNua gg btn">Google</button></a>
+            <form action="#" method="post">
+                <input type="text" placeholder="Tên" class="motDong">
+                <input type="text" placeholder="Họ" class="motDong">
+                <input type="text" placeholder="Địa chỉ" class="motDong">
+                <input type="text" placeholder="Số điện thoại" class="motDong">
+                <input type="email" placeholder="Email" class="motDong" >
+                <input type="password" placeholder="Mật khẩu" class="motDong">
+            </form>
+            <button class="motDong btn">Đăng ký</button>           
+            <hr/>
+            <div class="header_form_footer">
+                <a href="https://www.thuphapdungpham.com/pages/huong-dan-mua-hang">Trợ giúp</a>
+            </div>
+        </div>
+         <!-- cửa sổ chi tiết -->
+         <div class="giayViet">
+            <div class="md_chiTiet">
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                 <!-- CONTENT -->
+                <div class="content_chiTiet flex">
+                    <div class="zoomLes-img">
+                        <div class="zoom-Big">
+                            <img src="./Images/sanpham1.webp" alt="" class="zoom-imgBig">
+                        </div>
+                        <div class="zoom-Small">
+                            <img src="./Images/sanpham1.webp" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-1.jpg" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-6.jpg" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-2.jpg" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-3.jpg" alt="" class="zoom-imgSmall mauCoDam">
+                            <img src="./Images/chiTiet-4.jpg" alt="" class="zoom-imgSmall mauCoNhat">
+                            <img src="./Images/chiTiet-5.jpg" alt="" class="zoom-imgSmall mauXanhGhi">                 
+                            <img src="./Images/chiTiet-7.jpg" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-8.jpg" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-9.jpg" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-10.jpg" alt="" class="zoom-imgSmall">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <h2>Giấy viết tác phẩm thư pháp ô tròn ngọai đương set 10 tờ</h2>
+                        <!-- Chi tiết sản phẩm -->
+                        <div class="product-details">
+                            <p>Giá: <span class="giaSP">120,000₫</span></p>
+                            <p class="product-p_dam">Tiêu đề</p>
+                            <button class="btn mauCoDam tick">Màu cỗ đậm</button>
+                            <button class="btn mauCoNhat">Màu cỗ nhạt</button>
+                            <button class="btn mauXanhGhi">Màu xanh ghi</button>
+                            <p class="product-p_dam">Số lượng</p>
+                            <div class="quantity_btn btn-group">
+                                <button class="btn int"><i class="fa fa-minus"></i></button>
+                                <button class="btn">1</button>
+                                <button class="btn"><i class="fa fa-plus"></i></button>
+                            </div>
+                            <div class="flex">
+                                <button class="btn addBag">Thêm vào giỏ hàng</button>
+                            </div>
+                            <p class="md_chiTiet-link">Hoặc <a href="./chiTiet.html">Xem chi tiết</a></p>
+                            <div class="overflow">
+                                <p>Giấy viết tác phẩm thư pháp ô tròn ngọa đương có chất liệu là giấy xuyến chỉ bán sinh tuyên. 
+                                    Giấy có độ thấm mực tốt, khi viết tạo đường nét đẹp mắt. Giấy đã được chia sẵn bố cục 28 ô và 
+                                    khu vực đề khoản, từ đó giúp người viết dễ căn chỉnh không gian. Ô tròn in hoa văn cổ - ô ngói 
+                                    ngọa đương kết hợp với màu cổ tạo cảm giác nhã nhặn, giản dị.</p>
+                                <p>THÔNG SỐ SẢN PHẨM</p>
+                                <p>- Kích thước : 34x138cm</p>
+                                <p>- Chất liệu: Xuyến chỉ</p>
+                                <p>- Loại ô: Ngọa đương</p>
+                                <p>- Số ô: 28 ô</p>
+                                <p>- Không gian lạc khoản: 10x80cm</p>
+                                <p>- Số tờ: Set 10 tờ</p>
+                                <p>Lưu ý: Sản phẩm là giấy viết tác phẩm chưa bồi đế, giá trên là giá của set 10 tờ cùng màu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mucViet">
+            <div class="md_chiTiet">
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                 <!-- CONTENT -->
+                <div class="flex">
+                    <div class="zoomLes-img">
+                        <div class="zoom-Big">
+                            <img src="./Images/sanpham18.webp" alt="" class="zoom-imgBig">
+                        </div>
+                        <div class="zoom-Small">
+                            <img src="./Images/sanpham18.webp" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-11.webp" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet12.webp" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-13.webp" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-14.webp" alt="" class="zoom-imgSmall">
+                            <img src="./Images/chiTiet-15.webp" alt="" class="zoom-imgSmall">
+                        </div>
+                    </div>
+                    <div class="product">
+                        <h2>Mực túc mặc cao cấp Tuyên Hòa viết thư pháp 500g sắc đen</h2>
+                        <!-- Chi tiết sản phẩm -->
+                        <div class="product-details">
+                            <p>Giá: <span class="giaSP">230,000₫</span></p>
+                            <p class="product-p_dam">Số lượng</p>
+                            <div class="quantity_btn btn-group">
+                                <button class="btn int"><i class="fa fa-minus"></i></button>
+                                <button class="btn">1</button>
+                                <button class="btn"><i class="fa fa-plus"></i></button>
+                            </div>
+                            <div class="flex">
+                                <button class="btn addBag">Thêm vào giỏ hàng</button>
+                            </div>
+                            <p class="md_chiTiet-link">Hoặc <a href="./chiTietMuc.html">Xem chi tiết</a></p>
+                            <div class="overflow mucNe">
+                                <p>Túc mặc là tên một loại kỹ pháp trong quốc họa Trung Quốc. Trong cuốn "Lâm tuyền cao trí 林泉高致" 
+                                    của Quách Hi có nói về 7 phép dụng mặc. Túc mặc là 1 trong 7 pháp. Túc mắc là mực để ở nghiên 
+                                    qua đêm, khi đó mực bắt đầu thoát keo, vừa có độ sánh lại có sắc đen cháy. Khi viết tạo đường 
+                                    nét rõ ràng. </p>
+                                <p>THÔNG SỐ SẢN PHẨM</p>
+                                <p>- Trọng lượng: 500g</p>
+                                <p>- Nhãn hiệu: Tuyên Hòa</p>
+                                <p>- Loại mực: Túc mặc</p>
+                                <p>- Đặc điểm: Có độ đậm đặc cao, sắc mực đen cháy. Khi viết vẽ sẽ thấm và ít loang. Trong vẽ 
+                                    tranh được dùng ở khu vực cần sắc đen đậm.</p>
+                                <p>- Công dụng: Viết thư pháp, vẽ tranh</p>
+                                <p>HƯỚNG DẪN SỬ DỤNG: Lắc đều và đợi 3 phút rồi mới đổ ra sử dụng. Trong quá trình sử dụng, nếu 
+                                    thấy mực quá đậm đặc có thể cho thêm nước, có thể kết hợp sử dụng cùng các loại mực khác.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js" integrity="sha512-egjn0g4nyX3074dTJbuzFHdPDu17RP8ElcYpQuQbl9VUu6RKQaqlX4dJJ/l7Z5fFniqLSOJgytwP0FiKf4MEfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./myScript.js"></script>
+</body>
+</html>
